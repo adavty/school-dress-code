@@ -1,5 +1,5 @@
 <!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
-<title>Школьный дресс-код</title>
+<title>Дресс-код Ульяны Беденко</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -39,6 +39,21 @@ nav.sec{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:va
 nav.sec ul{list-style:none;margin:0 auto;padding:0;display:flex;justify-content:center;gap:clamp(14px,3vw,36px);overflow-x:auto;white-space:nowrap;scrollbar-width:none}
 nav.sec a{display:block;padding:13px 0;font-size:12px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;text-decoration:none}
 nav.sec a:hover{color:var(--accent)}
+
+/* author */
+.author{text-align:center;padding-block:clamp(72px,12vw,140px) clamp(64px,10vw,120px);border-bottom:1px solid var(--rule)}
+.author .kicker{font-family:var(--mono);font-size:12px;letter-spacing:.22em;text-transform:uppercase}
+.author h2{font-size:clamp(56px,11vw,150px);line-height:.92;letter-spacing:-.02em;margin:22px 0 0}
+.author h2 em{font-style:italic;display:block}
+.author .mark{width:56px;height:1px;background:var(--ink);margin:clamp(36px,5vw,56px) auto}
+.author .say{max-width:36em;margin:0 auto;display:grid;gap:18px;font-size:clamp(17px,1.6vw,19px);line-height:1.65;text-align:left}
+.author .say p:first-child::first-letter{font-family:var(--display);float:left;font-size:3.6em;line-height:.8;padding:6px 10px 0 0}
+.author .sign{margin-top:clamp(36px,5vw,52px);display:flex;justify-content:center;gap:24px;flex-wrap:wrap}
+@media (prefers-reduced-motion:no-preference){
+  .author h2{animation:rise .9s cubic-bezier(.2,.7,.2,1) both}
+  .author .say{animation:rise .9s .15s cubic-bezier(.2,.7,.2,1) both}
+  @keyframes rise{from{transform:translateY(14px)}to{transform:none}}
+}
 
 /* hero */
 .hero{display:grid;grid-template-columns:1.1fr 1fr;gap:clamp(24px,5vw,72px);padding-block:56px 72px;align-items:center}
@@ -236,6 +251,17 @@ footer p.label{max-width:52em;text-transform:none;letter-spacing:.02em;font-size
 </nav>
 
 <main>
+<section class="author wrap" aria-label="Об авторе">
+  <p class="kicker">Авторский проект</p>
+  <h2>Ульяны <em>Беденко</em></h2>
+  <div class="mark" aria-hidden="true"></div>
+  <div class="say">
+    <p>Мне всегда было интересно, как люди передают свои взгляды, идеи и смыслы через одежду и через то, как они себя выражают.</p>
+    <p>В школе старшее и младшее поколение часто не слышат друг друга. Взрослые говорят о порядке и уважении к месту, подростки — о праве быть собой. Обе стороны говорят о важном, но на разных языках.</p>
+    <p>Этим проектом я хотела снять как можно больше таких недопониманий: дать ученикам возможность выражать себя и при этом сохранить то, что ценно для учителей и администрации.</p>
+  </div>
+  <div class="sign"><span class="label">Санкт-Петербург</span><span class="label">Мода как общий язык</span></div>
+</section>
 <div class="wrap hero">
   <div>
     <p class="label">Исследовательский проект</p>
